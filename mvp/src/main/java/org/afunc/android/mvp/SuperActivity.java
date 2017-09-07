@@ -14,21 +14,16 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
 import android.widget.ProgressBar;
-import butterknife.ButterKnife;
 import org.afunc.android.util.DimenUtils;
 import org.afunc.android.util.LogUtils;
 
 import java.lang.annotation.Annotation;
 
 /**
- * Activity 顶级父类 : 添加各种状态 ( 数据错误，数据为空，数据加载中 ) 页的展示，
- * 自定义的 MaterialDialog 的显示，进度条 dialog 显示
- * <p>
- * MVP模型中把Activity作为view层，可通过getPresenter()调用对应的presenter实例
- * <p>
- * Created by linlongxin on 2016/8/3.
+ * Created by 紫紫 on 2017/8/7
+ * Q157596462@outlook.com
+ * 描述：MVP模型中把Activity作为view层，可通过getPresenter()调用对应的presenter实例
  */
-
 public abstract class SuperActivity<P extends SuperPresenter> extends AppCompatActivity {
 
     private final String TAG = "SuperActivity";
@@ -49,13 +44,15 @@ public abstract class SuperActivity<P extends SuperPresenter> extends AppCompatA
         super.onCreate(savedInstanceState);
         attachPresenter();
         setContentView(setContentViewId());
-        ButterKnife.bind(this);
         if (null != getIntent()) {
             handIntent(getIntent());
         }
         onCreateAfterSuper();
     }
 
+    /**
+     * @param intent 不必判空
+     */
     protected void handIntent(Intent intent) {
     }
 
@@ -67,10 +64,12 @@ public abstract class SuperActivity<P extends SuperPresenter> extends AppCompatA
 
     @SuppressWarnings("unchecked")
     protected <V extends View> V $(@IdRes int id) {
-        View view = super.findViewById(id);
-        return (V) view;
+        return (V) super.findViewById(id);
     }
 
+    public P getPresenter() {
+        return mPresenter;
+    }
 
     /**
      * onPostCreate final 避免被重写 可使用 beforeSuper 和 afterSuper
@@ -127,18 +126,14 @@ public abstract class SuperActivity<P extends SuperPresenter> extends AppCompatA
                         mPresenter.attachView(this);
                     } catch (InstantiationException e) {
                         e.printStackTrace();
-                        LogUtils.i(TAG, "SuperActivity : " + e.getMessage());
+                        LogUtils.e(TAG, e);
                     } catch (IllegalAccessException e) {
                         e.printStackTrace();
-                        LogUtils.i(TAG, "SuperActivity : " + e.getMessage());
+                        LogUtils.e(TAG, e);
                     }
                 }
             }
         }
-    }
-
-    public P getPresenter() {
-        return mPresenter;
     }
 
 
@@ -189,7 +184,7 @@ public abstract class SuperActivity<P extends SuperPresenter> extends AppCompatA
 
 
     public void showDialog(Dialog dialog) {
-        
+
         mDialog = dialog;
     }
 
@@ -214,7 +209,6 @@ public abstract class SuperActivity<P extends SuperPresenter> extends AppCompatA
             mPresenter.onDestroy();
         }
         mPresenter = null;
-        ButterKnife.unbind(this);
         onDestroyAfterSuper();
     }
 

@@ -4,33 +4,20 @@ import android.os.Bundle;
 import android.support.annotation.*;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.Window;
 
 
 /**
- * Activity 顶部可添加一个标准的 toolbar，只需在 xml 中添加一个 @+id = toolbar 的 Toolbar 即可，样式需自定义
- * <p>
- * Created by linlongxin on 2016/7/31.
+ * <li>Created by 紫紫 on 2017/9/7</li>
+ * <li>Q157596462@outlook.com</li>
+ * <li>描述：继承了superActivity </li>
  */
-
-public abstract class ToolbarActivity<T extends SuperPresenter> extends SuperActivity<T> {
+public abstract class ToolbarActivity<P extends SuperPresenter> extends SuperActivity<P> {
 
     //设置 toolbar 是否显示返回键
     private Toolbar mToolbar;
     private boolean isHomeBack = false;
 
-
-    public boolean setToolbarHomeBack() {
-        return false;
-    }
-
-
-    @SuppressWarnings("unchecked")
-    public <V extends View> V $(@IdRes int id) {
-        View view = super.findViewById(id);
-        return (V) view;
-    }
 
     protected void setHomeBack(boolean homeBack) {
         isHomeBack = homeBack;
@@ -38,9 +25,8 @@ public abstract class ToolbarActivity<T extends SuperPresenter> extends SuperAct
 
     @Override
     public void setContentView(@LayoutRes int layoutResID) {
-        isHomeBack = setToolbarHomeBack();
         super.setContentView(layoutResID);
-        mToolbar = (Toolbar) findViewById(setToolbarId());
+        mToolbar = $(setToolbarId());
     }
 
     protected abstract @IdRes
@@ -59,21 +45,22 @@ public abstract class ToolbarActivity<T extends SuperPresenter> extends SuperAct
     protected void onCreateAfterSuper() {
         super.onPostCreateAfterSuper();
         if (mToolbar != null) {
+            modifyToolbar(mToolbar);
             setSupportActionBar(mToolbar);
             getSupportActionBar().setDisplayHomeAsUpEnabled(isHomeBack);
         }
     }
 
+    protected void modifyToolbar(Toolbar mToolbar) {
+
+    }
+
     @Override
+    @CallSuper
     protected void onCreateBeforeSuper(@Nullable Bundle savedInstanceState) {
         super.onCreateBeforeSuper(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setTheme(setActivityTheme());
-    }
-
-
-    public Toolbar getToolbar() {
-        return mToolbar;
     }
 
     @Override

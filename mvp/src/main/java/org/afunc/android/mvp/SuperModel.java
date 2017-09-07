@@ -3,15 +3,17 @@ package org.afunc.android.mvp;
 import android.content.Context;
 import android.content.SharedPreferences;
 import org.afunc.android.util.LogUtils;
+
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
 /**
- * Created by linlongxin on 2016/8/7.
+ * Created by 紫紫 on 2017/8/7
+ * Q157596462@outlook.com
+ * 描述：
  */
-
 public class SuperModel {
 
     private final String TAG = "SuperModel";
