@@ -8,6 +8,9 @@ package org.afunc.androiddemo;
 
 public class MainPresenter extends AppPresenter<MainActivity> {
 
+    /**
+     * 同包 互相调用
+     */
     protected int sum(int a, int b) {
         return getView().sum(a, b);
     }
