@@ -8,6 +8,7 @@
         tools:context="org.afunc.androiddemo.MainActivity">
 
     <android.support.v7.widget.Toolbar
+            app:theme="@style/ToolbarTheme"
             android:id="@+id/toolbar"
             android:backgroundTint="@color/colorPrimary"
             android:layout_width="match_parent"
