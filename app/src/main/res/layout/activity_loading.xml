@@ -41,7 +41,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallPulse"
@@ -64,7 +64,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallClipRotate"
@@ -78,7 +78,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallClipRotatePulse"
@@ -100,7 +100,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="SquareSpin"
@@ -114,7 +114,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallClipRotateMultiple"
@@ -129,7 +129,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallPulseRise"
@@ -143,7 +143,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallRotate"
@@ -165,7 +165,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="CubeTransition"
@@ -179,7 +179,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallZigZag"
@@ -194,7 +194,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallZigZagDeflect"
@@ -208,7 +208,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallTrianglePath"
@@ -230,7 +230,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallScale"
@@ -244,7 +244,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="LineScale"
@@ -258,7 +258,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="LineScaleParty"
@@ -272,7 +272,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallScaleMultiple"
@@ -294,7 +294,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallPulseSync"
@@ -308,7 +308,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallBeat"
@@ -322,7 +322,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="LineScalePulseOut"
@@ -336,7 +336,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="LineScalePulseOutRapid"
@@ -358,7 +358,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallScaleRipple"
@@ -372,7 +372,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallScaleRippleMultiple"
@@ -386,7 +386,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallSpinFadeLoader"
@@ -400,7 +400,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="LineSpinFadeLoader"
@@ -422,7 +422,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="TriangleSkewSpin"
@@ -436,7 +436,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="Pacman"
@@ -450,7 +450,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="BallGridBeat"
@@ -464,7 +464,7 @@
                         android:gravity="center"
                         android:layout_height="wrap_content">
 
-                    <org.afunc.view.loading.IndicatorView
+                    <org.afunc.weiget.loading.IndicatorView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:indicator="SemiCircleSpin"
