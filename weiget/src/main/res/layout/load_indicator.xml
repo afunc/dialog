@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/corners_indicator"
+                android:layout_height="wrap_content">
+
+    <org.afunc.weiget.loader.IndicatorView
+            android:layout_margin="15dp"
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:indicator_color="@color/blue_btn_bg_pressed_color"
+    />
+    <TextView
+            android:id="@+id/msg_textView"
+            android:layout_width="wrap_content"
+            android:text="请稍后.."
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/indicator"
+            android:layout_toEndOf="@id/indicator"
+            />
+</RelativeLayout>
